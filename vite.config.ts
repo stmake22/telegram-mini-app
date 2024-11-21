@@ -8,5 +8,9 @@ export default defineConfig({
   build: {
     outDir: './docs'
   },
-  base: './'
+  base: './',
+  server: {
+    https: false,
+    port: 3000
+  }
 })
