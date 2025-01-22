@@ -1,7 +1,56 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+
+/* Font Family Settings */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.woff2') format('woff2'),
+      url('./assets/fonts/Poppins-Regular.woff') format('woff');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Medium.woff2') format('woff2'),
+      url('./assets/fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+      url('./assets/fonts/Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Poppins-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-ExtraBold.woff2') format('woff2'),
+      url('./assets/fonts/Poppins-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Poppins', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-default);
+  overflow: hidden; /* Scroll Enabled false */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,16 +60,174 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Color Set */
+  /* transition: background-color 0.5s ease, color 0.5s ease; */
+
+  /* Font Size */
+  --font-size-3xs: 8px;
+  --font-size-2xs: 10px;
+  --font-size-xs: 12px;
+  --font-size-default: 14px;
+  --font-size-xl: 22px;
+
+  /* Border Radius */
+  --radius-size-3xs: 2px;
+  --radius-size-2xs: 4px;
+  --radius-size-xs: 6px;
+  --radius-size-sm: 8px;
+  --radius-size-default: 12px;
+  --radius-size-lg: 16px;
+  --radius-size-xl: 20px;
+  --radius-size-2xl: 24px;
+  --radius-size-3xl: 28px;
+  --radius-size-full: 100%;
+
+  /* Gap */
+  --content-gap-3xs: 2px;
+  --content-gap-2xs: 4px;
+  --content-gap-xs: 6px;
+  --content-gap-sm: 8px;
+  --content-gap-default: 12px;
+  --content-gap-lg: 16px;
+  --content-gap-xl: 20px;
+  --content-gap-2xl: 24px;
+  --content-gap-3xl: 28px;
+  --content-gap-4xl: 32px;
+  --content-gap-5xl: 36px;
+  --content-gap-6xl: 40px;
+  --content-gap-7xl: 44px;
+  --content-gap-8xl: 48px;
+
+  /* Padding */
+  --padding-size-3xs: 2px;
+  --padding-size-2xs: 4px;
+  --padding-size-xs: 6px;
+  --padding-size-sm: 8px;
+  --padding-size-default: 12px;
+  --padding-size-lg: 16px;
+  --padding-size-xl: 20px;
+  --padding-size-2xl: 24px;
+  --padding-size-3xl: 28px;
+  --padding-size-4xl: 40px;
+  --padding-size-5xl: 60px;
+
+  /* Font Weight */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* Max Screen Size */
+  /* --screen-max-width: 525px; */
+  --screen-max-width: 510px;
+
+  /* ETC */
+  --header-size-height: 42px;
+  --footer-size-height: 62px;
+  --live-size-height: 34px;
+  --modal-backdrop: #00000033;
+  --safe-area-inset-bottom: 10px;
+}
+
+.light-mode {
+  /* Background Color */
+  --color-background-primary: #171A20;
+  --color-background-secondary: #0B2846;
+  --color-background-teritary: #173B65;
+  --color-background-quaternary: #89C3F8;
+  --color-background-quinary: #2F3643;
+  --color-background-brand: #0057BD;
+  --color-background-btmsht: #222731;
+  --color-background-disabled: #3D495F;
+  --color-background-inverse-wh: #FFFFFF;
+  --color-background-transparent: transparent;
+  --color-background-opacity-wh: #ffffff1a;
+
+  /* Font Color */
+  --color-font-primary: #89C3F8;
+  --color-font-secondary: #4D5C75;
+  --color-font-teritary: #4D6A9C;
+  --color-font-brand: #007BE2;
+  --color-font-disabled: #4D5C75;
+  --color-font-inverse-wh: #FFFFFF;
+  --color-font-warning: #F8A0A2;
+  --color-font-roulette: #3B46B5;
+
+  /* Border Color */
+  --color-border-primary: #173B65;
+  --color-border-secondary: #131E2C;
+  --color-border-brand: #007BE2;
+  --color-border-inverse-wh: #FFFFFF;
+  --color-border-warning: #F8A0A2;
+  --color-border-header: #FFFFFF4D;
+
+  /* Icon Color */
+  --color-border-brand: #007BE2;
+  --color-border-primary: #5E6F8C;
+  --color-font-disabled: #4D5C75;
+  --color-border-inverse-wh: #FFFFFF;
+  --color-border-warning: #F8A0A2;
+
+  /* Button Color */
+  --color-button-background-primary: #007BE2;
+  --color-button-background-secondary: #4D6A9C;
+  --color-button-background-disabled: #3D495F;
+}
+
+.dark-mode {
+  /* Background Color */
+  --color-background-primary: #171A20;
+  --color-background-secondary: #0B2846;
+  --color-background-teritary: #173B65;
+  --color-background-quaternary: #89C3F8;
+  --color-background-quinary: #2F3643;
+  --color-background-brand: #0057BD;
+  --color-background-btmsht: #222731;
+  --color-background-disabled: #3D495F;
+  --color-background-inverse-wh: #FFFFFF;
+  --color-background-transparent: transparent;
+  --color-background-opacity-wh: #ffffff1a;
+
+  /* Font Color */
+  --color-font-primary: #89C3F8;
+  --color-font-secondary: #4D5C75;
+  --color-font-teritary: #4D6A9C;
+  --color-font-brand: #007BE2;
+  --color-font-disabled: #4D5C75;
+  --color-font-inverse-wh: #FFFFFF;
+  --color-font-warning: #F8A0A2;
+  --color-font-roulette: #3B46B5;
+
+  /* Border Color */
+  --color-border-primary: #173B65;
+  --color-border-secondary: #131E2C;
+  --color-border-brand: #007BE2;
+  --color-border-inverse-wh: #FFFFFF;
+  --color-border-warning: #F8A0A2;
+
+  /* Icon Color */
+  --color-border-brand: #007BE2;
+  --color-font-disabled: #4D5C75;
+  --color-border-inverse-wh: #FFFFFF;
+  --color-border-warning: #F8A0A2;
+
+  /* Button Color */
+  --color-button-background-primary: #007BE2;
+  --color-button-background-secondary: #4D6A9C;
+  --color-button-background-disabled: #3D495F;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
+  /* font-weight: 500; */
+  /* color: #646cff; */
   text-decoration: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
-a:hover {
+/* a:hover {
   color: #535bf2;
-}
+} */
 
 body {
   margin: 0;
@@ -28,6 +235,19 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+  overflow: hidden; /** 스크롤 제거 */
+
+  /* 드레그 방지 */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+#root {
+  flex: 1;
+  overflow: hidden; /** 스크롤 제거 */
 }
 
 h1 {
@@ -36,33 +256,180 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: var(--radius-size-2xs);
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  /* padding: 0.6em 1.2em; */
+  height: 44px;
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-medium);
+  padding: 0;
+  margin: 0;
   font-family: inherit;
   background-color: #1a1a1a;
+  /* line-height: 11px; */
   cursor: pointer;
-  transition: border-color 0.25s;
+  -webkit-tap-highlight-color: transparent;
+  /* transition: border-color 0.25s; */
 }
-button:hover {
+/* button:hover {
   border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  /* a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  } */
+  /* button {
+    background-color: var(--color-button-background-primary);
+    color: var(--color-font-inverse-wh);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+  } */
+}
+
+/* Button */
+button {
+  background-color: var(--color-button-background-primary);
+  color: var(--color-font-inverse-wh);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Input */
+input {
+  background-color: var(--color-background-quinary);
+  border: none;
+  height: 38px;
+  border-radius: var(--radius-size-2xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  padding: 0 var(--padding-size-sm);
+}
+
+input::placeholder {
+  color: var(--color-font-secondary);
+}
+
+input:focus {
+  outline: 1px solid var(--color-border-brand); /* 사용자 정의 포커스 스타일 */
+  outline-offset: 0; /* 외곽선과 컨텐츠 간 거리 */
+}
+
+input.outline_none:focus {
+  outline: none; 
+}
+
+/* Scroll */
+.scroll_hidden {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scroll_hidden::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Modal */
+#loading_Modal {
+  padding: 0!important;
+  border-bottom: 0!important;
+  border-radius: 0!important;
+}
+
+.ReactModalPortal {
+  z-index: 9999;
+}
+
+.ReactModal__Content {
+  /* background-color: var(--color-background-transparent)!important; */
+  display: flex;
+  border: none!important;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  background-color: var(--color-background-quaternary)!important;
+  padding: 3px!important;
+  width: calc(100% - 32px);
+  max-width: var(--screen-max-width);
+  border-radius: var(--radius-size-xl)!important;
+  overflow: unset!important;
+  border-bottom: 5px solid var(--color-border-secondary)!important;
+}
+
+.ReactModal__Content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.ReactModal__Overlay {
+  background-color: var(--modal-backdrop)!important;
+}
+
+/* Sheet */
+.react-modal-sheet-container {
+  background-color: transparent!important;
+}
+
+.react-modal-sheet-backdrop {
+  border-radius: 0;
+}
+
+.react-modal-sheet-header {
+  background-color: var(--color-background-btmsht);
+  border-top-left-radius: var(--radius-size-default);
+  border-top-right-radius: var(--radius-size-default);
+}
+
+.react-modal-sheet-drag-indicator {
+  background-color: var(--color-background-primary)!important;
+}
+
+.react-modal-sheet-backdrop {
+  background-color: var(--modal-backdrop)!important;
+}
+
+/* Text Drag */
+.allow_to_drag_text {
+  -webkit-user-select:text;
+  -moz-user-select:text;
+  -ms-user-select:text;
+  user-select:text;
+}
+
+/* All Drag */
+.allow_to_drag_all {
+  -webkit-user-select:all;
+  -moz-user-select:all;
+  -ms-user-select:all;
+  user-select:all;
+}
+
+/* Roulatte Text */
+.roulate_text {
+  /* font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 900; */
+  color: transparent; /* 기본 텍스트 색상 제거 */
+  -webkit-text-stroke: 3px var(--color-font-roulette); /* 테두리 설정 */
+  -webkit-text-fill-color: white; /* 내부 투명 */
+}
+
+/* Tooltip */
+.react-tooltip {
+  z-index: 9999;
+  max-width: 240px!important;
+  font-size: var(--font-size-2xs)!important;
+  font-weight: var(--font-weight-medium)!important;
+  color: var(--color-font-inverse-wh)!important;
+  padding: var(--padding-size-default)!important;
+  border-radius: var(--radius-size-xs)!important; 
+  background-color: var(--color-background-disabled)!important;
+  opacity: 1!important;
 }

@@ -1,0 +1,15 @@
+const App = () => {
+  const [a, setA] = useState(1);
+
+  a = 2;
+
+  useEffect(() => {
+    setA(3);
+  },[])
+
+  console.log(a);
+
+  return (
+    <></>
+  )
+}

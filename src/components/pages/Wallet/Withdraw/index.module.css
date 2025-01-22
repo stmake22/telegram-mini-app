@@ -1,0 +1,115 @@
+
+.withdraw {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-2xl);
+}
+
+.widthdraw_address_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.widthdraw_address_check_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: var(--content-gap-default);
+}
+
+.withdraw_title {
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-font-inverse-wh);
+}
+
+.widthdraw_address_edit_box {
+  background-color: var(--color-background-quinary);
+  border-radius: var(--radius-size-2xs);
+  padding: 0 var(--padding-size-sm);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: var(--content-gap-sm);
+}
+
+.widthdraw_address_text {
+  display: flex;
+  flex: 1;
+  height: 24px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-transparent);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* .widthdraw_address_text.active {
+  color: var(--color-font-inverse-wh);
+} */
+
+.widthdraw_edit_btn {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  /* width: 36px; */
+  height: 28px;
+  padding: 0 var(--padding-size-sm);
+}
+
+.withdraw_balance_amount {
+  display: flex;
+  flex: 1;
+  height: 24px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-transparent);
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.withdraw_balance_text {
+  flex: 1;
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-quinary);
+  border-radius: var(--radius-size-2xs);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+
+.withdraw_info_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-xs);
+  padding: var(--padding-size-default) 0;
+}
+
+.withdraw_info_text {
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+.withdraw_info_text.blue_color {
+  color: var(--color-font-primary);
+}
+
+.withdraw_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.withdraw_draw_input_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.withdraw_draw_btn_box {
+  display: flex;
+}

@@ -1,0 +1,28 @@
+.referral {
+  display: flex;
+  flex: 1;
+  z-index: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: var(--screen-max-width);
+  background-color: var(--color-background-primary);
+  padding-top: var(--header-size-height);
+}
+
+.referral_innerbox {
+  flex: 1;
+  padding-top: var(--padding-size-sm);
+  padding-left: var(--padding-size-xl);
+  padding-right: var(--padding-size-xl);
+}
+
+.group_header {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  color: var(--color-font-inverse-wh);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-background-primary);
+}

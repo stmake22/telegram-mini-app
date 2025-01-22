@@ -1,0 +1,58 @@
+.game_view {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--padding-size-lg) var(--padding-size-default);
+}
+
+.free_box_flex {
+  display: flex;
+  position: absolute;
+  left: var(--padding-size-default);
+  top: var(--padding-size-lg);
+  /* margin-top: var(--padding-size-lg); */
+}
+
+.free_box_btn {
+  position: relative;
+  display: flex;
+  /* align-self: flex-start; */
+  /* top: 0; */
+  justify-content: center;
+  background-color: var(--color-background-transparent);
+  border-radius: 0;
+  height: unset;
+  width: unset;
+}
+
+.free_box_text {
+  font-size: var(--font-size-3xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-brand);
+  border-radius: var(--radius-size-sm);
+  width: 47px;
+  height: 14px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -2px;
+  line-height: 11px;
+}
+
+.sea_otter {
+  position: relative;
+  top: 10%;
+  width: 300px;
+  aspect-ratio: 1.788268956;
+}
+
+.sun_box {
+  position: absolute;
+  /* top: 80px; */
+  top: var(--padding-size-4xl);
+  left: 78px;
+}

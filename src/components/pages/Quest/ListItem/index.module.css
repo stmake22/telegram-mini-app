@@ -1,0 +1,116 @@
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 53px;
+  column-gap: var(--content-gap-lg);
+  padding-bottom: var(--padding-size-default);
+  z-index: 1;
+}
+
+.list_item_header {
+  padding-bottom: var(--padding-size-xs);
+  position: relative;
+}
+
+.list_item_first {
+  padding-top: var(--padding-size-xs);
+}
+
+.item_image_box {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_image {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-size-2xs);
+  background-color: var(--color-background-btmsht);
+}
+
+.item_image_sheet {
+  background-color: var(--color-background-primary);
+}
+
+
+
+.item_content_box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item_content_title {
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+.item_content_sub {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-brand);
+}
+
+.item_button_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_claim {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-primary);
+  margin: 0;
+  /* min-width: 36px; */
+  padding: 0 var(--padding-size-sm);
+  height: 28px;
+  border-radius: var(--radius-size-2xs);
+}
+
+.button_roulette {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-primary);
+  margin: 0;
+  /* min-width: 36px; */
+  padding: 0 var(--padding-size-sm);
+  height: 28px;
+  border-radius: var(--radius-size-2xs);
+}
+
+.button_project {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-secondary);
+  margin: 0;
+  /* min-width: 36px; */
+  padding: 0 var(--padding-size-sm);
+  height: 28px;
+  border-radius: var(--radius-size-2xs);
+}
+
+.button_quest {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-secondary);
+  margin: 0;
+  /* min-width: 36px; */
+  padding: 0 var(--padding-size-sm);
+  height: 28px;
+  border-radius: var(--radius-size-2xs);
+}
+
+.bottom_padding {
+  padding-bottom: var(--content-gap-default);
+}

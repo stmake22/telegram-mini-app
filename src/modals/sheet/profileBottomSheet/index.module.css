@@ -1,0 +1,176 @@
+/*
+  Basic
+*/
+
+.modal {
+  max-width: var(--screen-max-width);
+  margin: auto;
+}
+
+.modal_content {
+  display: flex;
+  background-color: var(--color-background-btmsht);
+  padding-top: var(--padding-size-xl);
+  padding-left: var(--padding-size-lg);
+  padding-right: var(--padding-size-lg);
+  padding-bottom: var(--padding-size-lg);
+}
+
+/********************************************************/
+
+/*
+  Profile Info
+*/
+
+.info_containner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-default);
+}
+
+.profile_box {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-size-full);
+  overflow: hidden;
+  margin: auto;
+}
+
+.profile_image {
+  flex: 1;
+  width: 100%;
+}
+
+.info_input_group {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.info_userId_box {
+  background-color: var(--color-background-quinary);
+  border-radius: var(--radius-size-2xs);
+  padding: 0 var(--padding-size-sm);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: var(--content-gap-sm);
+}
+
+.info_userId_text {
+  flex: 1;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-transparent);
+  border: none;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.info_userId_btn {
+  font-size: var(--font-size-2xs);
+  font-weight: var(--font-weight-medium);
+  background-color: var(--color-button-background-secondary);
+  width: 43px;
+  height: 24px;
+  padding: 0;
+}
+
+.info_normal_input_box {
+  background-color: var(--color-background-quinary);
+  border-radius: var(--radius-size-2xs);
+  padding: 0 var(--padding-size-sm);
+  height: 38px;
+  display: flex;
+  align-items: center;
+  column-gap: var(--content-gap-sm);
+}
+
+.info_normal_text {
+  flex: 1;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-background-transparent);
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/********************************************************/
+
+/*
+  Total Score
+*/
+
+.score {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.score_title {
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-font-inverse-wh);
+}
+
+.score_text_box {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--padding-size-sm);
+  background-color: var(--color-background-quinary);
+  height: 38px;
+}
+
+.score_icon_box {
+  flex: 1;
+  display: flex;
+  column-gap: var(--content-gap-sm);
+}
+
+.score_icon_text {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+.score_amount_text {
+  flex: 1;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+
+/********************************************************/
+/*
+  Fotter Close Button
+*/
+
+.close_btn_box {
+  width: 100%;
+  display: flex;
+  padding: var(--padding-size-default) 0;
+}
+
+.button_class {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-primary);
+  margin: 0;
+  padding: 0;
+  /* min-width: 36px; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 12px;
+  height: 36px;
+  border-radius: var(--radius-size-2xs);
+}
+/********************************************************/

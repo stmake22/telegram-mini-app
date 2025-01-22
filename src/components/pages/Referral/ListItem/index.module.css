@@ -1,0 +1,115 @@
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  height: 38px;
+  column-gap: var(--content-gap-sm);
+  padding: 0 var(--padding-size-sm);
+  margin-bottom: var(--padding-size-default);
+  background-color: var(--color-background-btmsht);
+  border-radius: var(--radius-size-2xs);
+  z-index: 1;
+}
+
+.list_item_header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: var(--padding-size-xs);
+  row-gap: var(--content-gap-default);
+}
+
+.item_image_box {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item_image {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-size-default);
+  background-color: var(--color-background-primary);
+}
+
+.item_content_box {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--content-gap-xs);
+  align-items: center;
+}
+
+.item_tag_name {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-secondary);
+}
+
+.item_user_name {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+.item_header_content_box {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+}
+
+.item_header_referral_text {
+  color: var(--color-font-primary);
+}
+
+.item_header_url_box {
+  display: flex;
+  height: 38px;
+  border-radius: var(--radius-size-2xs);
+  background-color: var(--color-background-secondary);
+  align-items: center;
+  padding: 0 var(--padding-size-default);
+  column-gap: var(--content-gap-default);
+}
+
+.item_header_url_text {
+  flex: 1;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item_header_btn_copy_box {
+  display: flex;
+  align-items: center;
+}
+
+.item_header_btn_copy {
+  /* width: 49px; */
+  height: 28px;
+  background-color: var(--color-button-background-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  padding: 0 var(--padding-size-sm);
+}
+
+.item_button_box {
+  display: flex;
+  margin-bottom: var(--content-gap-default);
+}
+
+.item_button {
+  flex: 1;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-inverse-wh);
+  background-color: var(--color-button-background-primary);
+  margin: 0;
+  /* height: 36px; */
+  border-radius: var(--radius-size-2xs);
+}

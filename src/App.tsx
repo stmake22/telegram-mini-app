@@ -1,36 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from 'react'
+import { BrowserRouter } from 'react-router'
+import { ContainerProvider } from './providers';
+import { useModalStore } from './store';
+// import WebApp from '@twa-dev/sdk';
 
-import WebApp from '@twa-dev/sdk'
+const App = () => {
+  // let [count, setCount] = useState(2);
+  const { setLoadingModal } = useModalStore();
 
-function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    setLoadingModal(true);
+  },[])
+  
+  // count = 1;
+
+  useEffect(() => { 
+
+    // setCount(3);
+    // console.log('count 2 - ', count);
+    // WebApp이 준비되었는지 확인
+    // WebApp.ready();
+    // document.getElementsByTagName("html")[0].classList.remove("light-mode");
+    // document.getElementsByTagName("html")[0].classList.add("light-mode");
+    // 유저 정보 가져오기
+    // const userData = WebApp.initDataUnsafe;
+    // console.log(userData);
+    // WebApp.onEvent('');
+    // const userData_e = WebApp.initData.length;
+    // console.log(JSON.stringify(userData));
+    // WebApp.showAlert(JSON.stringify(userData.)||'X');
+    // WebApp.openLink('https://t.me/wallet');
+    // testtt();
+  }, []);
+
+  // useEffect(() => {
+  //   console.log('count 4 - ', count);
+  // },[count])
+  // console.log('count 3 - ', count);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-		{/* Here we add our button with alert callback */}
-      <div className="card">
-        <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
-            Show Alert
-        </button>
-      </div>
-    </>
+    <BrowserRouter>
+      <ContainerProvider />
+    </BrowserRouter>
   )
 }
 

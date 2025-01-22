@@ -1,0 +1,16 @@
+.sheet_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  background-color: var(--color-background-btmsht);
+  border-top-left-radius: var(--radius-size-default);
+  border-top-right-radius: var(--radius-size-default);
+  overflow: hidden;
+}
+
+.sheet_indicator {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-background-primary);
+}

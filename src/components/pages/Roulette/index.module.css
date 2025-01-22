@@ -1,0 +1,169 @@
+.roulette {
+  display: flex;
+  flex: 1;
+  z-index: 1;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: var(--screen-max-width);
+  background-color: var(--color-background-primary);
+  padding-top: var(--header-size-height);
+}
+
+.roulette_innerbox {
+  flex: 1;
+  padding-top: var(--padding-size-5xl);
+  padding-bottom: var(--padding-size-4xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.roulette_container {
+  background-image: url('../../../assets//images/roulette/roulette_none.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 251px;
+  overflow: hidden;
+  position: relative;
+}
+
+.roulette_button_container {
+  padding: 0 var(--padding-size-xl);
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-sm);
+}
+
+.roulette_button_spin {
+  background-color: var(--color-button-background-secondary);
+}
+
+.roulette_item_box {
+  display: flex;
+  position: absolute;
+  
+  transition: transform 0.1s linear; /* 자연스러운 움직임 */
+  bottom: 36px;
+}
+
+.roulette_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 102px;
+  height: 151px;
+  font-size: 14px;
+  font-weight: bold;
+  /* background-color: #2B36A2; */
+  color: white;
+  /* border: 1px solid #2B36A2; */
+  text-align: center;
+}
+
+.roulette_item_light {
+  background-color: #2B36A2;
+}
+
+.roulette_item_dark {
+  background-color: #21256B;
+}
+
+.roulette_item_active {
+  background-color: #FFD400;
+}
+
+.roulette_item_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 135px;
+  border: 1px solid #6C80FF;
+  border-right: 0;
+  row-gap: var(--content-gap-default);
+}
+
+.roulette_item_inner_light {
+  background-color: #5A6CDC;
+}
+
+.roulette_item_inner_dark {
+  background-color: #383FB1;
+}
+
+.roulette_item_inner_active {
+  background-color: #FFF600;
+  border: 1px solid var(--color-border-inverse-wh);
+  border-right: 0;
+}
+
+.roulette_item_icon_box {
+  display: flex;
+}
+
+.roulette_item_text_box {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--content-gap-xs);
+  align-items: center;
+}
+
+.roulette_item_text_reward {
+  z-index: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 19px;
+  color: var(--color-font-inverse-wh);
+}
+
+.roulette_item_text_reward::before {
+  z-index: -1;
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  -webkit-text-stroke: 5px #3B46B5;
+}
+
+.roulette_item_text_type {
+  z-index: 1;
+  position: relative;
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-bold);
+  line-height: 11px;
+}
+
+.roulette_item_text_type::before {
+  z-index: -1;
+  content: attr(data-content);
+  position: absolute;
+  left: 0;
+  -webkit-text-stroke: 4px #2B36A2;
+  stroke-linejoin: round;
+}
+
+
+.pin_class {
+  display: flex;
+  position: relative;
+  /* justify-self: center; */
+  margin: 0 auto;
+  z-index: 1;
+  top: 27px;
+}
+
+/* 무한 회전 애니메이션 */
+/* .spinning {
+  animation: spin infinite linear 1s;
+}
+
+@keyframes spin {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+} */

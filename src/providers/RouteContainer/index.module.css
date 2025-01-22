@@ -1,0 +1,8 @@
+.game_background {
+  flex: 1;
+  /* overflow-y: auto; */
+  display: flex;
+  background-image: url('../../assets/images/game/gameBackground/bkg.png');
+  background-size: cover;
+  background-position: center;
+}

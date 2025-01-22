@@ -1,0 +1,11 @@
+
+.live_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--live-size-height);
+  background-color: var(--color-background-brand);
+  align-self: flex-end;
+  justify-self: flex-end;
+}
